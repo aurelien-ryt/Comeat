@@ -15,5 +15,13 @@
         android:text="Sélection de la spécialité culinaire et de la date"
         />
 
+    <Button
+        android:id="@+id/goToListeRepasActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libellé de la spécialité et date au format JJ:MM:AAAA"
+        />
+
+
 
 </LinearLayout>

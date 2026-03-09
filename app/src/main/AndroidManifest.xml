@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Comeat">
         <activity
+            android:name=".VisuRepasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListeRepasActivity"
+            android:exported="false" />
+        <activity
             android:name=".RechercheRepasActivity"
             android:exported="false" />
         <activity

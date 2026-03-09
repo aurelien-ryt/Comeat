@@ -1,12 +1,15 @@
 package fr.awa.comeat
 
+import android.R.attr.duration
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import fr.awa.comeat.Modele.findUtilisateur
 
 class MainActivity : AppCompatActivity() {
@@ -25,10 +28,28 @@ class MainActivity : AppCompatActivity() {
 
             Log.d( "ACT_CONN" , "Connexion : $email/$mdp" )
 
-            if( findUtilisateur) {
-                setContentView(R.layout.activity_menu_repas)
+            if(findUtilisateur( email , mdp ) != null) {
+                Log.d( "ACT_CONN" , "Connexion réussie" )
+
+                Toast.makeText(
+                    this,
+                    "Connexion réussie !",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+                val intent = Intent( this , MenuRepasActivity::class.java)
+                startActivity( intent)
             }
-            else
+
+            else{
+                Toast.makeText(
+                    this,
+                    "Erreur de connexion !",
+                    Toast.LENGTH_SHORT
+                ).show()
+                Log.d( "ACT_CONN" , "Erreur de connexion" )
+
+            }
 
         }
         val boutonAnnuler : Button = findViewById( R.id.annuler )

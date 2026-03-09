@@ -10,6 +10,7 @@ class MenuRepasActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         setContentView(R.layout.activity_menu_repas)
         val bouton : Button = findViewById( R.id.goToRepasActivity)
         bouton.setOnClickListener {

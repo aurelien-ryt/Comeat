@@ -8,22 +8,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class RechercheRepasActivity : AppCompatActivity() {
+class ListeRepasActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_liste_repas)
 
-        // Ce qu'on affiche a l'arrivé :
-        setContentView(R.layout.activity_recherche_repas)
-
-        // Ce qu'on veut utiliser comme bouton (via le fichier xml)
-        val bouton : Button = findViewById( R.id.goToListeRepasActivity)
+        val bouton : Button = findViewById( R.id.goToVisuRepasActivity)
         bouton.setOnClickListener {
-
-            // OU on va avec ce bouton
-            val intent = Intent( this , ListeRepasActivity::class.java)
+            val intent = Intent( this , VisuRepasActivity::class.java)
             startActivity( intent)
         }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

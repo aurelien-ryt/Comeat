@@ -2,30 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main2"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MenuRepasActivity">
+    tools:context=".ListeRepasActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu des repas"
+        android:text=" Liste des repas pour lesquels l'utilisateur n'est ni hote ni convive"
         />
 
     <Button
-        android:id="@+id/goToRepasActivity"
+        android:id="@+id/goToVisuRepasActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mes participations"
-        />
-
-    <Button
-        android:id="@+id/goToRechercheRepasActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Les repas proprosés"
+        android:text="Identifiant du repas selectionné"
         />
 </LinearLayout>

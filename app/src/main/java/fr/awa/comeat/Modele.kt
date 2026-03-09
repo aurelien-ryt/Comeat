@@ -26,7 +26,10 @@ object Modele {
         Utilisateur( 10 , "SMITH" , "Negan" , "hegan.smith@gmail.com" , "azerty" ) ,
         Utilisateur( 11 , "PORTER" , "Eugène" , "eugene.porter@gmail.com" , "azerty" ) ,
         Utilisateur( 12 , "PELETIER" , "Carole" , "carole.peletier@gmail.com" , "azerty" ) ,
-        Utilisateur( 13 , "GREENE" , "Beth" , "beth.greene@gmail.com" , "azerty" )
+        Utilisateur( 13 , "GREENE" , "Beth" , "beth.greene@gmail.com" , "azerty" ),
+        Utilisateur( 14 , "ROYANT" , "Aurelien" , "test@a.com" , "azerty" )
+
+
     )
 
     private val repas: MutableList<Repas> = mutableListOf(
