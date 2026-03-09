@@ -10,16 +10,36 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Comeat"
-        />
+        android:text="@string/lbl_email"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_mdp"/>
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
 
     <Button
-        android:id="@+id/goToMenuRepasActivity"
-        android:layout_width="wrap_content"
+        android:id="@+id/connecter"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Authentification réussie"
-        />
+        android:text="@string/btn_connecter"/>
+
+    <Button
+        android:id="@+id/annuler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_annuler"/>
+
 
 </LinearLayout>
