@@ -12,12 +12,13 @@ class MenuRepasActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         setContentView(R.layout.activity_menu_repas)
+
         val bouton : Button = findViewById( R.id.goToRepasActivity)
         bouton.setOnClickListener {
             val intent = Intent( this , RepasActivity::class.java)
             startActivity( intent)
         }
-        setContentView(R.layout.activity_menu_repas)
+
         val bouton2 : Button = findViewById( R.id.goToRechercheRepasActivity)
         bouton2.setOnClickListener {
             val intent = Intent( this , RechercheRepasActivity::class.java)

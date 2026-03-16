@@ -9,18 +9,28 @@
     android:orientation="vertical"
     tools:context=".RechercheRepasActivity">
 
+    <Spinner
+        android:id="@+id/select_specialite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/aff_date"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sélection de la spécialité culinaire et de la date"
         />
 
     <Button
-        android:id="@+id/goToListeRepasActivity"
+        android:id="@+id/select_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Libellé de la spécialité et date au format JJ:MM:AAAA"
-        />
+        android:text="Selectionner date" />
+
+    <Button
+        android:id="@+id/ValiderAndGoToListeRepasActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valider" />
 
 
 
